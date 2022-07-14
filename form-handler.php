@@ -1,4 +1,6 @@
 <?php
+ini_set ('display_errors', 1);
+error_reporting(E-ALL);
 $visitor_email= $_POST['email'];
 $name= $_POST['name'];
 $message= $_POST['message'];
@@ -19,5 +21,10 @@ $headers .="Reply-To: $visitor_email\r\n";
 mail($to, $email_body, $headers);
 
 header("Location: about.html");
+if (mail($to,  $subject,  $message, $headers));{
+echo "Success";
+} else{
+echo"Failed";
+}
 
 ?>
