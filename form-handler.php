@@ -3,7 +3,7 @@ $visitor_email= $_POST['email'];
 $name= $_POST['name'];
 $message= $_POST['message'];
 
-$email_from = 'vickingscreative.github.io';
+$email_from = 'victorkings225@gmail.com';
 
 $email_subject ='New Form Submission';
 
